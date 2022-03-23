@@ -1,0 +1,56 @@
+@import "scss/def-settings";
+
+#currentWeather,
+#dailyWeather .dayWeather {
+    padding: 2vw;
+}
+
+#currentWeather {
+    display: inline-block;
+    border-radius: 5%;
+    margin: 2vh;
+}
+
+#dailyWeather {
+    margin: 2vh;
+    margin-top: 3vh;
+}
+
+#dailyWeather .dayWeather {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+
+    * {
+        margin: 8px;
+    }
+    *:nth-child(1) {
+        font-size: 21px;
+        font-weight: bold;
+    }
+    *:nth-child(2) {
+        font-weight: bold;
+    }
+    *:nth-child(3) {
+        filter: drop-shadow(1px 1px 0 $sky) drop-shadow(-1px -1px 0 $sky)
+            drop-shadow(-1px 1px 0 $sky) drop-shadow(1px -1px 0 $sky);
+    }
+    *:nth-child(4) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+#currentWeather,
+#dailyWeather .dayWeather {
+    border: 1px solid #aaa;
+}
+
+#dailyWeather .dayWeather:first-child {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+#dailyWeather .dayWeather:last-child {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}

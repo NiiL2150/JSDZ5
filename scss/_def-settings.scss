@@ -1,0 +1,14 @@
+@import "variables";
+
+* {
+    font-family: $def-font;
+}
+
+body {
+    color: $def-color;
+    background-color: $def-bg-color;
+}
+
+.hidden {
+    display: none !important;
+}
